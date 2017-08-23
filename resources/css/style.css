@@ -1,0 +1,43 @@
+/* Global Styles */
+
+html {
+  font-size: 16px;
+  font-family: Helvetica;
+}
+
+/* Temporary Border for mark-up */
+header, div, nav, footer {
+  border: 1px solid #000;
+}
+
+header {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  height: 2rem;
+  padding: 1rem 1.5rem;
+  background-color: white;
+}
+
+.header__logo {
+  display: flex;
+  align-items: center;
+}
+
+#lion {
+  height: 2rem;
+}
+
+.header__logo--colmar {
+  color: #4a4a4a;
+  font-weight: bold;
+}
+
+.header__logo--academy {
+  color: #9b9b9b;
+}
+
+header ul li {
+  display: inline-block;
+  padding: 0.5rem;
+}
