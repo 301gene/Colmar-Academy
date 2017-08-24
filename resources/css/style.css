@@ -5,8 +5,16 @@ html {
   font-family: Helvetica;
 }
 
+.header__logo--colmar, .banner h1, .banner h3, header ul li {
+  color: #4a4a4a;
+}
+
+.header__logo--academy {
+  color: #d8d8d8;
+}
+
 /* Temporary Border for mark-up */
-header, div, nav, footer {
+header, div, section, nav, footer {
   border: 1px solid #000;
 }
 
@@ -29,15 +37,50 @@ header {
 }
 
 .header__logo--colmar {
-  color: #4a4a4a;
-  font-weight: bold;
-}
 
-.header__logo--academy {
-  color: #9b9b9b;
+  font-weight: bold;
 }
 
 header ul li {
   display: inline-block;
   padding: 0.5rem;
+}
+
+/* Banner Section */
+
+.banner {
+  display: flex;
+  align-items: center;
+  background-color: #d8d8d8;
+}
+
+.banner h1 {
+  font-size: 3rem;
+  font-weight: bold;
+  margin-bottom: 1.5rem;
+}
+
+.banner h3 {
+  font-size: 1.75rem;
+  font-weight: 600;
+  margin-bottom: 1.5rem;
+}
+
+.banner img {
+  width: 60%;
+  margin: 2rem 1.5rem;
+}
+
+.banner__content {
+  width: 30%;
+}
+
+.banner__button {
+  text-decoration: none;
+  background-color: #4a4a4a;
+  color: #fff;
+  padding: 0.5rem 0;
+  display: block;
+  margin: auto;
+  text-align: center;
 }
