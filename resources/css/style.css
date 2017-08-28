@@ -195,7 +195,7 @@ header ul li {
 
 /* Thesis section */
 
-.thesis-exhibit {
+.thesis-exhibit, footer {
   background-color: #f3f5f5;
 }
 
@@ -213,4 +213,23 @@ header ul li {
 
 .thesis-exhibit__content--post {
   border: none;
+}
+
+/* Footer */
+
+footer {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 1rem 1.5rem;
+  border-top: 1px solid #d8d8d8;
+  height: 4rem;
+}
+
+footer a {
+  color: #4a4a4a;
+}
+
+footer ul li {
+  display: inline-block;
 }
