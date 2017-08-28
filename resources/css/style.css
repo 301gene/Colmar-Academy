@@ -16,18 +16,23 @@ h1 {
 }
 
 h3 {
-  font-size: 1.75rem;
+  font-size: 1.5rem;
   font-weight: 600;
 }
 
-.banner {
-  display: flex;
-  align-items: center;
-}
-
-.banner img, .information__left {
+.left-section {
   width: 60%;
   margin: 2rem 1.5rem;
+}
+
+.right-section {
+  width: 40%;
+  margin: 1rem 0;
+  border-left: 1px solid #d8d8d8;
+}
+
+.right-section:first-child img {
+  padding-top: 0;
 }
 
 .paragraph {
@@ -36,6 +41,17 @@ h3 {
 
 a {
   text-decoration: none;
+}
+
+.section-title {
+  padding: 2rem 0 1rem 0;
+  text-align: center;
+  margin: 0;
+}
+
+video {
+  width: 100%;
+  margin-bottom: 1.5rem;
 }
 
 /* Temporary Border for mark-up */
@@ -79,7 +95,12 @@ header ul li {
 
 /* Banner Section */
 
-.banner, .article.new {
+.banner {
+  display: flex;
+  align-items: center;
+}
+
+.banner, .post.new {
   background-color: #d8d8d8;
 }
 
@@ -110,49 +131,35 @@ header ul li {
   margin-bottom: 2rem;
 }
 
-.information__right {
-  width: 40%;
-  margin: 1rem 0;
-  border-left: 1px solid #d8d8d8;
-}
-
-.article {
+.post {
   display: flex;
   align-items: center;
 }
 
-.article img {
+.post img {
   height: auto;
   width: 35%;
   padding: 1rem;
 }
 
-.article__content {
+.post__content {
   width: 65%;
   line-height: 1.5;
 }
 
-.article__content p {
+.post__content p {
   padding: 0.5rem 0;
 }
 
-.article__content a {
+.post__content a {
   color: #4a90e2;
-}
-
-.information__right:first-child img {
-  padding-top: 0;
 }
 
 /* Course Section */
 
 .courses {
-  margin: 0 3.5rem 1rem 3.5rem;
-}
-
-.courses h1 {
-  margin: 2rem 0 1rem 0;
-  text-align: center;
+  padding: 0 3.5rem 1rem 3.5rem;
+  background-color: #eaebec;
 }
 
 .courses__list {
@@ -164,6 +171,9 @@ header ul li {
 .course {
   width: 30%;
   margin: 1rem;
+  display: flex;
+  flex-direction: column;
+  background-color: white;
 }
 
 .course img {
@@ -177,4 +187,30 @@ header ul li {
 
 .course__description h3, .course__description p {
   padding: 0.5rem 0;
+}
+
+.course__description p {
+  color: #797979;
+}
+
+/* Thesis section */
+
+.thesis-exhibit {
+  background-color: #f3f5f5;
+}
+
+.thesis-exhibit__content {
+  display: flex;
+}
+
+.thesis-exhibit__content .left-section {
+  margin: 1rem 1.5rem 1.5rem;
+}
+
+.thesis-exhibit__content .left-section p {
+  margin: 0.5rem 0;
+}
+
+.thesis-exhibit__content--post {
+  border: none;
 }
