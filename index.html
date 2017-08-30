@@ -17,11 +17,17 @@
 
     <!-- Navigation Section -->
       <nav>
-        <ul>
+        <ul class="desktop-nav">
           <li>On campus</li>
           <li>Online</li>
           <li>For companies</li>
           <li>Sign in</li>
+        </ul>
+        <ul class="mobile-nav" >
+          <li><img src="./resources/images/ic-logo.svg" alt=""></li>
+          <li><img src="./resources/images/ic-on-campus.svg" alt=""></li>
+          <li><img src="./resources/images/ic-online.svg" alt=""></li>
+          <li><img src="./resources/images/ic-login.svg" alt=""></li>
         </ul>
       </nav>
     </header>
@@ -49,7 +55,8 @@
 
       <div class="information__right right-section">
         <div class="post">
-          <img src="./resources/images/information-orientation.jpg" alt="orientation">
+          <img src="./resources/images/information-orientation.jpg" alt="orientation" class="desktop-image">
+          <img src="./resources/images/information-orientation-mobile.jpg" alt="orientation mobile" class="mobile-image">
           <div class="post__content">
             <h3>Orientation Date</h3>
             <p>Tue 10/11 &amp; Wed 10/12: 8am-3pm</p>
@@ -58,7 +65,8 @@
         </div>
 
         <div class="post">
-          <img src="./resources/images/information-campus.jpg" alt="campus">
+          <img src="./resources/images/information-campus.jpg" alt="campus" class="desktop-image">
+          <img src="./resources/images/information-campus-mobile.jpg" alt="campus mobile" class="mobile-image">
           <div class="post__content">
             <h3>Our campus</h3>
             <p>Find which campus is close by you</p>
@@ -67,7 +75,8 @@
         </div>
 
         <div class="post new">
-          <img src="./resources/images/information-guest-lecture.jpg" alt="guest lecture">
+          <img src="./resources/images/information-guest-lecture.jpg" alt="guest lecture" class="desktop-image">
+          <img src="./resources/images/information-guest-lecture-mobile.jpg" alt="guest lecture mobile" class="mobile-image">
           <div class="post__content">
             <h3>Our guest lecture</h3>
             <p>Join a keynote with Oliver Sack about music in medical treatment</p>
@@ -80,7 +89,7 @@
     <section class="courses">
       <h1 class="section-title" >Start Learning</h1>
       <div class="courses__list">
-        <div class="course">
+        <div class="course-desktop">
           <img src="./resources/images/course-software.jpg" alt="software engineering">
           <div class="course__description">
             <h3>Software engineering</h3>
@@ -88,7 +97,7 @@
             <p>Web Development, Mobile Development, iOT, APIs</p>
           </div>
         </div>
-        <div class="course">
+        <div class="course-desktop">
           <img src="./resources/images/course-computer-art.jpg" alt="computer art">
           <div class="course__description">
             <h3>Computer Art</h3>
@@ -96,7 +105,7 @@
             <p>Imaging &amp; Design, Web Design, Motion &amp; Visual Effects, Computer Animation</p>
           </div>
         </div>
-        <div class="course">
+        <div class="course-desktop">
           <img src="./resources/images/course-design.jpg" alt="design">
           <div class="course__description">
             <h3>Design</h3>
@@ -104,7 +113,7 @@
             <p>User Experience Design, User Research, Visual Design</p>
           </div>
         </div>
-        <div class="course">
+        <div class="course-desktop">
           <img src="./resources/images/course-data.jpg" alt="data">
           <div class="course__description">
             <h3>Data</h3>
@@ -112,7 +121,7 @@
             <p>Data Science, Bid Data, SQL, Data Visualization</p>
           </div>
         </div>
-        <div class="course">
+        <div class="course-desktop">
           <img src="./resources/images/course-business.jpg" alt="business">
           <div class="course__description">
             <h3>Business</h3>
@@ -120,7 +129,7 @@
             <p>Product Development, Business Development, Startup</p>
           </div>
         </div>
-        <div class="course">
+        <div class="course-desktop">
           <img src="./resources/images/course-marketing.jpg" alt="marketing">
           <div class="course__description">
             <h3>Marketing</h3>
@@ -128,6 +137,14 @@
             <p>Analytics, Content Marketing, Mobile Marketing</p>
           </div>
         </div>
+
+        <!-- Mobile course list -->
+        <a href="" class="course-mobile">Software Engineering</a>
+        <a href="" class="course-mobile">Computer Art</a>
+        <a href="" class="course-mobile">Design</a>
+        <a href="" class="course-mobile">Data</a>
+        <a href="" class="course-mobile">Business</a>
+        <a href="" class="course-mobile">Marketing</a>
       </div>
     </section>
 
@@ -146,14 +163,14 @@
 
         <div class="thesis-exhibit__content--post right-section">
           <div class="post new">
-            <img src="./resources/images/thesis-fisma.jpg" alt="fisma">
+            <img src="./resources/images/thesis-fisma.jpg" alt="fisma" class="desktop-image">
             <div class="post__content">
               <h3>Fisma: Design and Prototype</h3>
               <p>Designer showcase of new prototype products</p>
             </div>
           </div>
           <div class="post">
-            <img src="./resources/images/thesis-now-and-then.jpg" alt="now and then">
+            <img src="./resources/images/thesis-now-and-then.jpg" alt="now and then" class="desktop-image">
             <div class="post__content">
               <h3>Now and then</h3>
               <p>Research study about New York</p>

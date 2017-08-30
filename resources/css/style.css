@@ -7,6 +7,7 @@ html {
 
 body {
   color: #4a4a4a;
+  margin: 0;
 }
 
 h1 {
@@ -54,6 +55,14 @@ video {
   margin-bottom: 1.5rem;
 }
 
+.mobile-image {
+  display: none;
+}
+
+.course-mobile {
+  display: none;
+}
+
 /* Temporary Border for mark-up */
 header, div, section, nav, footer {
   border: 1px solid #000;
@@ -93,6 +102,33 @@ header ul li {
   padding: 0.5rem;
 }
 
+.mobile-nav {
+  display: none;
+}
+
+@media only screen and (max-width: 700px) {
+  header {
+    height: 4rem;
+    padding: 0;
+    background-color: white;
+    display: block;
+  }
+  .desktop-nav, .header__logo {
+    display: none;
+  }
+  nav {
+    display: flex;
+    height: 100%;
+    flex-direction: column;
+    justify-content: center;
+  }
+  .mobile-nav {
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+  }
+}
+
 /* Banner Section */
 
 .banner {
@@ -121,6 +157,35 @@ header ul li {
   text-align: center;
 }
 
+@media only screen and (max-width: 700px) {
+  .banner {
+    display: flex;
+    flex-direction: column;
+  }
+
+  .left-section {
+    width: 100%;
+    margin: 0;
+  }
+
+  .banner__content {
+    width: auto;
+    padding: 2rem 1rem;
+    margin: 0 auto;
+  }
+
+  .banner__content h1 {
+    margin-bottom: 2rem;
+    width: 100%;
+  }
+
+  .banner__button {
+    margin: 0 1rem;
+  }
+}
+
+/* Information Section */
+
 .information {
   background-color: #f3f5f5;
   display: flex;
@@ -136,7 +201,7 @@ header ul li {
   align-items: center;
 }
 
-.post img {
+.desktop-image {
   height: auto;
   width: 35%;
   padding: 1rem;
@@ -155,6 +220,40 @@ header ul li {
   color: #4a90e2;
 }
 
+@media only screen and (max-width: 700px) {
+  .information {
+    flex-direction: column;
+  }
+
+  .information__left {
+    display: none;
+  }
+
+  .information__right {
+    width: auto;
+    margin: 0;
+    border: 0;
+  }
+
+  .post {
+    flex-direction: column;
+    padding: 1rem;
+  }
+
+  .desktop-image {
+    display: none;
+  }
+
+  .mobile-image {
+    display: flex;
+    width: 100%;
+  }
+
+  .post__content {
+    width: 100%;
+  }
+}
+
 /* Course Section */
 
 .courses {
@@ -168,7 +267,7 @@ header ul li {
   justify-content: center;
 }
 
-.course {
+.course-desktop {
   width: 30%;
   margin: 1rem;
   display: flex;
@@ -176,7 +275,7 @@ header ul li {
   background-color: white;
 }
 
-.course img {
+.course-desktop img {
   height: auto;
   width: 100%;
 }
@@ -191,6 +290,33 @@ header ul li {
 
 .course__description p {
   color: #797979;
+}
+
+@media only screen and (max-width: 700px) {
+
+  .courses {
+    padding-bottom: 1.5rem;
+  }
+
+  .course-desktop {
+    display: none;
+  }
+
+  .course-mobile {
+    display: block;
+    padding: 1rem 1rem 1.5rem;
+    background-color: #C1C1C1;
+    color: #4A4A4A;
+    text-align: center;
+    margin-bottom: 0.5rem;
+    font-size: 1.5rem;
+  }
+
+  .courses__list {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+  }
 }
 
 /* Thesis section */
@@ -214,6 +340,16 @@ header ul li {
 .thesis-exhibit__content--post {
   border: none;
 }
+
+@media only screen and (max-width: 700px) {
+  .thesis-exhibit__content--post.right-section, .thesis-exhibit__content .left-section h3,  .thesis-exhibit__content .left-section p {
+    display: none;
+  }
+
+  .thesis-exhibit__content .left-section {
+    margin: 0;
+  }
+  }
 
 /* Footer */
 
